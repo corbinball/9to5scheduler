@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="C:\Users\Corbin\Desktop\sch2s\style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -29,23 +29,32 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+
+
         <table class="scheduleTable">
-            <tr>
-                <th class="hourTime hour">9AM</th>
-                <th class="eventInput row"
-                    form id="events-listed">
+
+            <tbody id="time9" class="row time-block">
+                <th class="col-2 hour">9AM</th>
+                <th=textarea class="col-8 description">
+                    <form id="events-listed">
                         <input type="text" class="form-input w-100" id="event-entry" name="event-entry" placeholder="No event added, click to add event" />
-                    </form></th>
-                <th class="saveEvent"></th>
-            </tr>
-            <tr>
-                <th class="hourTime hour">10AM</th>
-                <th class="eventInput row"
-                    form id="events-listed">
+                    </form>
+                </th>
+                <button class="btn saveBtn col-2" type="button">Save</button>
+            </tbody>
+
+
+            <tbody id="time10" class="row time-block">
+                <tr><th class="col-2 hour">10AM</th></tr>
+                <th=textarea class="col-8 description">
+                    <form id="events-listed">
                         <input type="text" class="form-input w-100" id="event-entry" name="event-entry" placeholder="No event added, click to add event" />
-                    </form></th>
-                <th class="saveEvent"></th>
-            </tr>
+                    </form>
+                </textarea>
+                <button class="btn saveBtn col-2" type="button">Save</button>
+            </tbody>
+
+
             <tr>
                 <th class="hourTime hour">11AM</th>
                 <th class="eventInput row"
@@ -108,6 +117,6 @@
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="C:\Users\Corbin\Desktop\sch2s\script.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
