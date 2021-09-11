@@ -24,8 +24,13 @@ function addEvent(event) {
     var eventAdd = $('input[name="event-entry"]').val();
 
     if (!eventAdd) {
+        displayMessage("Please add event");
         console.log('No event added');
-        return;
+    } else {
+        displayMessage("Event Added");
+
+        localStorage.setItem("event", eventAdd)
+
     }
 
     eventLog.append(eventAdd);
